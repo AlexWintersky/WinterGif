@@ -1,220 +1,109 @@
-# WinterGif
-
 <div align="center">
 
-**Lightweight screen capture, frame editing, and GIF export for Windows**
+# WinterGif
 
-*Fast, intuitive, dark-mode, local-first, and built for creators who want clean GIF workflows without cloud tools.*
+### Capture. Refine. Share.
 
-![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-1f6feb?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![UI](https://img.shields.io/badge/UI-CustomTkinter-111827?style=for-the-badge)
-![Mode](https://img.shields.io/badge/Mode-Offline-0f766e?style=for-the-badge)
-![Output](https://img.shields.io/badge/Export-GIF-f59e0b?style=for-the-badge)
+**A lightweight, offline screen recorder and GIF editor for Windows.**
+
+Made for clean, quick GIFs without online services, accounts, or unnecessary complexity.
+
+![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-218bff?style=flat-square&logo=windows&logoColor=white)
+![Version](https://img.shields.io/badge/Version-1.2.0-343e56?style=flat-square)
+![Offline](https://img.shields.io/badge/100%25-Offline-11a88c?style=flat-square)
+![Languages](https://img.shields.io/badge/Languages-EN%20%2F%20PT--BR-6668de?style=flat-square)
+![Built with Python](https://img.shields.io/badge/Built%20with-Python-3776ab?style=flat-square&logo=python&logoColor=white)
 
 </div>
 
 ---
 
-## Preview
+## The application
 
-![WinterGif interface screenshot](assets/wintergif-ui.png)
+<div align="center">
 
-## What is WinterGif?
+<img src="assets/wintergif-ui.png" alt="WinterGif 1.2 dark interface with capture controls, preview panel and frame-editing timeline" width="100%">
 
-**WinterGif** is a lightweight desktop tool for capturing a region of the screen, reviewing frames, trimming unwanted sections, cropping content, and exporting clean animated GIFs.
+<sub>WinterGif v1.2.0 · Dark-mode desktop interface</sub>
 
-It was designed to be:
+</div>
 
-- **Fast to open**
-- **Simple to use**
-- **Fully local and offline**
-- **Friendly for creators and developers**
-- **Easy to distribute as a portable Windows app**
+## About
 
-No cloud rendering. No account. No browser workflow. Just capture, edit, and export.
+**WinterGif** is a focused desktop utility for turning screen recordings into animated GIFs. Select the area you want to capture, preview the result, remove unnecessary frames, crop the image, and export a GIF without leaving the application.
 
----
+Designed as a small, practical tool for recording **software interfaces, game animations, tutorials, bug reproductions, and portfolio demonstrations**.
 
-## Why it stands out
+### Highlights
 
-- **Modern dark interface** with a clean visual hierarchy
-- **Region-based capture** for focused recordings
-- **Frame-aware editing** for quick cleanup before export
-- **Selection markers** that make trim operations easier to understand
-- **Local-only workflow** for privacy and speed
-- **Portable EXE distribution** for non-technical users
-- **Bilingual interface** with **English** and **Brazilian Portuguese** support
+| | Feature | What it does |
+|:--:|---|---|
+| 🎯 | **Region capture** | Record only the portion of your screen that matters. |
+| ▶️ | **Playback & preview** | Review your recording before saving it. |
+| ✂️ | **Timeline selection** | Set the beginning and end of the section you want to edit. |
+| 🧹 | **Keep or delete** | Preserve a selected range or remove unwanted frames. |
+| 🖼️ | **Cropping** | Focus the output on the relevant content. |
+| ↩️ | **Undo** | Revert editing operations. |
+| ⚙️ | **Capture controls** | Adjust FPS, maximum width, and recording duration. |
+| 🌐 | **Bilingual UI** | Switch between English and Brazilian Portuguese. |
+| 🔒 | **Local-first** | Capture, edit, and export without sending content to the cloud. |
 
----
+## The workflow
 
-## Core features
+<div align="center">
 
-| Feature | Description |
-|---|---|
-| Capture region | Record a custom screen area instead of the full desktop |
-| Stop with F8 | Quickly end a capture with a global hotkey |
-| Playback preview | Review the animation before exporting |
-| Timeline editing | Work with selected ranges and individual frames |
-| Keep / Delete selection | Preserve only the important part or remove unwanted ranges |
-| Crop tool | Remove unnecessary margins and focus the output |
-| Undo support | Revert edits safely |
-| GIF export | Save optimized animated GIFs locally |
-| Offline operation | No cloud dependency for capture and editing |
-| Bilingual UI | Switch between English and Portuguese |
+**Select an area** &nbsp; → &nbsp; **Record** &nbsp; → &nbsp; **Preview** &nbsp; → &nbsp; **Edit frames** &nbsp; → &nbsp; **Export GIF**
 
----
+</div>
 
-## Editing workflow
+1. **Capture:** Select a region of the screen and start recording.
+2. **Stop:** Use the on-screen control or press **F8**.
+3. **Preview:** Play the captured sequence and inspect its frames.
+4. **Refine:** Use the timeline markers to choose which frames to keep or delete; crop if needed.
+5. **Export:** Save the result as an animated GIF.
 
-WinterGif is built around a straightforward workflow:
+> **Note:** GIF is a silent format. WinterGif captures visuals, not audio.
 
-1. **Capture a region** of the screen
-2. **Stop recording** with the interface or **F8**
-3. **Preview playback** in the app
-4. Use the **range markers** to define the portion you want to keep or remove
-5. **Delete a frame** if necessary
-6. **Crop** the visible area if needed
-7. **Export** the final GIF
+## Designed for
 
-This makes it ideal for:
+| Creators | Developers | Game designers |
+|---|---|---|
+| Tutorial snippets and visual posts | Bug reports and UI demos | Animation previews and gameplay clips |
 
-- software demos
-- UI showcases
-- gameplay snippets
-- animation previews
-- tutorial clips
-- portfolio material for GitHub and documentation
+## Behind the project
 
----
+WinterGif was developed in **Python**, using **CustomTkinter** for its dark desktop UI, **MSS** for screen capture, and **Pillow** for image processing and GIF export.
 
-## Download and use
+The goal was to keep the workflow straightforward: fewer distractions, clear controls, and useful editing tools in a single window.
 
-### For end users
+### Privacy & portability
 
-Download **`WinterGif-Windows-x64.zip`** from [GitHub Releases](../../releases), extract the folder, and open:
+- **Offline workflow:** recordings and edits are processed locally.
+- **No account required:** no registration or online dashboard.
+- **Windows-focused:** the interface is designed for Windows desktop use.
+- **Portable distribution planned:** compiled builds can bundle Python dependencies so end users do not need Python installed.
 
-```text
-WinterGif.exe
-```
+## Repository status
 
-### End-user highlights
+> **Project showcase**
+>
+> This repository currently contains **documentation, a screenshot, and a license**. The application source code and compiled executable are **not included here**. This page demonstrates the project; it is not presently a download or build guide.
 
-- No Python installation required
-- No terminal window required
-- No internet required after download
-- Everything runs locally on Windows
+The screenshot above shows the application UI. Future demonstrations or downloadable builds can be added without changing the overall structure of this page.
 
-> Keep the `_internal` folder next to `WinterGif.exe` when using the packaged build.
+## Author
 
----
-
-## Build the Windows EXE
-
-This repository includes a simple build launcher:
-
-```text
-BUILD_EXE.bat
-```
-
-Double-click it on a **Windows 10/11 64-bit** machine with **Python 3.10+** installed.
-
-The script will:
-
-1. Detect a compatible local Python installation
-2. Create a temporary build environment
-3. Install dependencies and PyInstaller
-4. Run basic tests
-5. Generate a portable release folder
-6. Create a final ZIP ready for distribution
-
-### Generated output
-
-```text
-WinterGif-Release/
-  WinterGif.exe
-  _internal/
-  LEIA-ME.txt
-  SHA256.txt
-
-WinterGif-Windows-x64.zip
-```
-
-This output is ready to upload to **GitHub Releases**.
-
----
-
-## Build automatically with GitHub Actions
-
-If you do not want to build locally:
-
-1. Push the source repository, including `.github/workflows/build-windows.yml`
-2. Open the **Actions** tab
-3. Run **Build portable Windows app**
-4. Download the generated artifact
-5. Upload it to **Releases**
-
----
-
-## Project structure
-
-```text
-WinterGif.py             # Main application code
-WinterGif.pyw            # GUI entry point without console
-BUILD_EXE.bat            # Double-click Windows build launcher
-build_release.ps1        # Build and packaging logic
-RELEASE-README.txt       # Included in the release folder
-requirements.txt         # Runtime dependencies
-tests/                   # Basic automated tests
-assets/                  # README images and visual assets
-.github/workflows/       # Optional CI build pipeline
-```
-
----
-
-## Tech stack
-
-- **Python**
-- **CustomTkinter** for the dark desktop UI
-- **MSS** for fast screen capture
-- **Pillow** for image processing and GIF export
-- **PyInstaller** for Windows packaging
-
----
-
-## Notes
-
-- GIF files do **not** contain audio
-- Large captures or long recordings will use more memory
-- Windows may show a SmartScreen warning because the app is unsigned
-- Compiled binaries should always be tested on Windows before public release
-
----
+**Alexandre Kamimura Paulo** · [AlexWintersky](https://github.com/AlexWintersky)  
+Contact: [wintersky.dev@gmail.com](mailto:wintersky.dev@gmail.com)
 
 ## License
 
-No open-source license has been selected yet.
-
-If you want others to reuse, modify, or redistribute the code, add a license such as **MIT**.
+See the [MIT license](LICENSE) for the materials included in this repository. The license does not imply that unpublished application code is available here.
 
 ---
 
-## Portuguese summary / Resumo em português
+<div align="center">
 
-**WinterGif** é uma ferramenta leve para **capturar uma região da tela, editar frames e exportar GIFs** com uma interface moderna em modo escuro.
+<sub>WinterGif · Built for simple, fast, offline GIF workflows.</sub>
 
-Principais pontos:
-
-- roda localmente
-- não depende de nuvem
-- permite capturar, visualizar, cortar e exportar GIFs
-- possui interface em **inglês** e **português do Brasil**
-- pode ser distribuído como **aplicativo portátil para Windows**
-
----
-
-## Status
-
-**Current version:** `v1.2.0`
-
-The app is already usable and the project is being refined for better portability, UX polish, and public showcase quality.
+</div>
